@@ -1,0 +1,19 @@
+{
+  "code": 200,
+  "msg": "Success",
+  "expMsg": null,
+  "data": [
+    {
+      "sysSn": "AL0000000000000",
+      "popv": 12.45,
+      "minv": "SMILE-S6-HV-INV",
+      "poinv": 3.82,
+      "cobat": 8.18,
+      "mbat": "SMILE-BAT-5PH",
+      "surplusCobat": 7.77,
+      "usCapacity": 95.0,
+      "emsStatus": "Normal"
+    }
+  ],
+  "extra": null
+}

@@ -1,0 +1,66 @@
+{
+  "entity": {
+    "sensor": {
+      "pv_power": {
+        "default": "mdi:solar-power"
+      },
+      "pv_string_1_power": {
+        "default": "mdi:solar-power"
+      },
+      "pv_string_2_power": {
+        "default": "mdi:solar-power"
+      },
+      "pv_string_3_power": {
+        "default": "mdi:solar-power"
+      },
+      "pv_string_4_power": {
+        "default": "mdi:solar-power"
+      },
+      "pv_dc_meter_power": {
+        "default": "mdi:solar-power"
+      },
+      "grid_power": {
+        "default": "mdi:transmission-tower"
+      },
+      "grid_power_l1": {
+        "default": "mdi:transmission-tower"
+      },
+      "grid_power_l2": {
+        "default": "mdi:transmission-tower"
+      },
+      "grid_power_l3": {
+        "default": "mdi:transmission-tower"
+      },
+      "grid_import_power": {
+        "default": "mdi:transmission-tower-import"
+      },
+      "grid_export_power": {
+        "default": "mdi:transmission-tower-export"
+      },
+      "load_power": {
+        "default": "mdi:home-lightning-bolt"
+      },
+      "ev_power": {
+        "default": "mdi:ev-station"
+      },
+      "battery_model": {
+        "default": "mdi:battery"
+      },
+      "pv_energy_today": {
+        "default": "mdi:solar-power-variant"
+      },
+      "pv_energy_total": {
+        "default": "mdi:solar-power-variant"
+      },
+      "self_consumption": {
+        "default": "mdi:home-percent"
+      },
+      "self_sufficiency": {
+        "default": "mdi:home-battery"
+      },
+      "ev_energy_today": {
+        "default": "mdi:ev-station"
+      }
+    }
+  }
+}

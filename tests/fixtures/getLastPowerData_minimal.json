@@ -1,0 +1,20 @@
+{
+  "code": 200,
+  "msg": "Success",
+  "expMsg": null,
+  "data": {
+    "ppv": 1520.0,
+    "ppvDetail": null,
+    "soc": 54.0,
+    "pev": null,
+    "pevDetail": null,
+    "prealL1": null,
+    "prealL2": null,
+    "prealL3": null,
+    "pgrid": -310.0,
+    "pbat": 400.0,
+    "pload": 810.0,
+    "pgridDetail": null
+  },
+  "extra": null
+}

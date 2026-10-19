@@ -1,0 +1,101 @@
+# serializer version: 1
+# name: test_entry_diagnostics
+  dict({
+    'energy': dict({
+      'system_1': dict({
+        'daily': dict({
+          'e_charge': 5.31,
+          'e_charging_pile': 0.0,
+          'e_discharge': 5.15,
+          'e_grid_charge': 0.33,
+          'e_input': 11.94,
+          'e_output': 0.02,
+          'epv': 9.3,
+          'sys_sn': 'system_1',
+          'the_date': '2024-06-01',
+        }),
+        'summary': dict({
+          'carbon_num': 8260.0,
+          'echarge': 0.08,
+          'edischarge': 0.0,
+          'einput': 13.91,
+          'eload': 15.4,
+          'eoutput': 0.0,
+          'epvtoday': 1.58,
+          'epvtotal': 16521.0,
+          'eself_consumption': 0.61,
+          'eself_sufficiency': 0.6702,
+          'money_type': None,
+          'today_income': None,
+          'total_income': 3770.0,
+          'tree_num': 1645.0,
+        }),
+      }),
+    }),
+    'entry': dict({
+      'data': dict({
+        'app_id': '**REDACTED**',
+        'app_secret': '**REDACTED**',
+      }),
+      'disabled_by': None,
+      'discovery_keys': dict({
+      }),
+      'domain': 'alpha_ess',
+      'minor_version': 1,
+      'options': dict({
+      }),
+      'pref_disable_new_entities': False,
+      'pref_disable_polling': False,
+      'source': 'user',
+      'subentries': list([
+      ]),
+      'title': '**REDACTED**',
+      'unique_id': '**REDACTED**',
+      'version': 1,
+    }),
+    'live': dict({
+      'system_1': dict({
+        'pbat': 0.0,
+        'pev': 0.0,
+        'pev_detail': dict({
+          'ev1_power': None,
+          'ev2_power': None,
+          'ev3_power': None,
+          'ev4_power': None,
+        }),
+        'pgrid': 3230.0,
+        'pgrid_detail': dict({
+          'pmeter_l1': 1199.0,
+          'pmeter_l2': 1038.0,
+          'pmeter_l3': 994.0,
+        }),
+        'pload': 3230.0,
+        'ppv': 0.0,
+        'ppv_detail': dict({
+          'pmeter_dc': 0.0,
+          'ppv1': 0.0,
+          'ppv2': 0.0,
+          'ppv3': 0.0,
+          'ppv4': 0.0,
+        }),
+        'preal_l1': 21.58,
+        'preal_l2': 0.0,
+        'preal_l3': 0.0,
+        'soc': 10.8,
+      }),
+    }),
+    'systems': list([
+      dict({
+        'cobat': 8.18,
+        'ems_status': 'Normal',
+        'mbat': 'SMILE-BAT-5PH',
+        'minv': 'SMILE-S6-HV-INV',
+        'poinv': 3.82,
+        'popv': 12.45,
+        'surplus_cobat': 7.77,
+        'sys_sn': 'system_1',
+        'us_capacity': 95.0,
+      }),
+    ]),
+  })
+# ---

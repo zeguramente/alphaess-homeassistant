@@ -1,0 +1,13 @@
+{
+  "domain": "alpha_ess",
+  "name": "Alpha ESS",
+  "codeowners": ["@zeguramente"],
+  "config_flow": true,
+  "documentation": "https://github.com/zeguramente/alphaess-homeassistant",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/zeguramente/alphaess-homeassistant/issues",
+  "loggers": ["alphaessaio"],
+  "requirements": ["alphaess-aio==1.0.1"],
+  "version": "0.1.0"
+}

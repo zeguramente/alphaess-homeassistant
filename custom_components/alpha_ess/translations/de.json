@@ -1,0 +1,169 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "AlphaESS-Konto verbinden",
+        "description": "Gib die AppID und das AppSecret deines AlphaESS-Entwicklerkontos ein. Du findest sie unter {developer_portal_url}, nachdem du dich registriert und dein System dort gebunden hast.",
+        "data": {
+          "app_id": "AppID",
+          "app_secret": "AppSecret"
+        },
+        "data_description": {
+          "app_id": "Entwickler-ID aus dem AlphaESS-Entwicklerportal.",
+          "app_secret": "Entwickler-Secret aus dem AlphaESS-Entwicklerportal."
+        }
+      },
+      "reauth_confirm": {
+        "title": "AlphaESS-Konto erneut anmelden",
+        "description": "Die AlphaESS-Cloud hat das AppSecret abgelehnt. Gib das aktuelle AppSecret von {developer_portal_url} ein, um die Verbindung wiederherzustellen.",
+        "data": {
+          "app_secret": "AppSecret"
+        },
+        "data_description": {
+          "app_secret": "Entwickler-Secret aus dem AlphaESS-Entwicklerportal."
+        }
+      },
+      "reconfigure": {
+        "title": "AppSecret ändern",
+        "description": "Gib das neue AppSecret deines AlphaESS-Entwicklerkontos ein. Um eine andere AppID zu verwenden, füge die Integration erneut hinzu.",
+        "data": {
+          "app_secret": "AppSecret"
+        },
+        "data_description": {
+          "app_secret": "Entwickler-Secret aus dem AlphaESS-Entwicklerportal."
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Ungültige Zugangsdaten (AppID oder AppSecret).",
+      "cannot_connect": "Verbindung zur AlphaESS-Cloud fehlgeschlagen.",
+      "unknown": "Unerwarteter Fehler."
+    },
+    "abort": {
+      "already_configured": "Dieses AlphaESS-Konto ist bereits eingerichtet.",
+      "no_systems": "An dieses AlphaESS-Konto ist kein System gebunden. Binde dein System unter {developer_portal_url} und versuche es erneut.",
+      "reauth_successful": "Die erneute Anmeldung war erfolgreich.",
+      "reconfigure_successful": "Die Neukonfiguration war erfolgreich."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "pv_power": {
+        "name": "PV-Leistung"
+      },
+      "load_power": {
+        "name": "Verbrauchsleistung"
+      },
+      "grid_power": {
+        "name": "Netzleistung"
+      },
+      "grid_import_power": {
+        "name": "Netzbezugsleistung"
+      },
+      "grid_export_power": {
+        "name": "Netzeinspeiseleistung"
+      },
+      "battery_power": {
+        "name": "Batterieleistung"
+      },
+      "battery_state_of_charge": {
+        "name": "Batterieladezustand"
+      },
+      "ev_power": {
+        "name": "Wallbox-Leistung"
+      },
+      "pv_string_1_power": {
+        "name": "PV-String 1 Leistung"
+      },
+      "pv_string_2_power": {
+        "name": "PV-String 2 Leistung"
+      },
+      "pv_string_3_power": {
+        "name": "PV-String 3 Leistung"
+      },
+      "pv_string_4_power": {
+        "name": "PV-String 4 Leistung"
+      },
+      "pv_dc_meter_power": {
+        "name": "PV-DC-Zähler Leistung"
+      },
+      "grid_power_l1": {
+        "name": "Netzleistung L1"
+      },
+      "grid_power_l2": {
+        "name": "Netzleistung L2"
+      },
+      "grid_power_l3": {
+        "name": "Netzleistung L3"
+      },
+      "inverter_power_l1": {
+        "name": "Wechselrichterleistung L1"
+      },
+      "inverter_power_l2": {
+        "name": "Wechselrichterleistung L2"
+      },
+      "inverter_power_l3": {
+        "name": "Wechselrichterleistung L3"
+      },
+      "pv_energy_today": {
+        "name": "PV-Energie heute"
+      },
+      "grid_import_energy_today": {
+        "name": "Netzbezug heute"
+      },
+      "grid_export_energy_today": {
+        "name": "Netzeinspeisung heute"
+      },
+      "battery_charge_energy_today": {
+        "name": "Batterieladung heute"
+      },
+      "battery_discharge_energy_today": {
+        "name": "Batterieentladung heute"
+      },
+      "battery_grid_charge_energy_today": {
+        "name": "Batterieladung aus dem Netz heute"
+      },
+      "ev_energy_today": {
+        "name": "Wallbox-Energie heute"
+      },
+      "load_energy_today": {
+        "name": "Verbrauch heute"
+      },
+      "pv_energy_total": {
+        "name": "PV-Energie gesamt"
+      },
+      "self_consumption": {
+        "name": "Eigenverbrauchsquote"
+      },
+      "self_sufficiency": {
+        "name": "Autarkiegrad"
+      },
+      "battery_capacity": {
+        "name": "Batteriekapazität"
+      },
+      "battery_usable_capacity": {
+        "name": "Nutzbare Batteriekapazität"
+      },
+      "inverter_nominal_power": {
+        "name": "Wechselrichter-Nennleistung"
+      },
+      "pv_nominal_power": {
+        "name": "PV-Nennleistung"
+      },
+      "battery_model": {
+        "name": "Batteriemodell"
+      }
+    }
+  },
+  "exceptions": {
+    "authentication_failed": {
+      "message": "Die AlphaESS-Cloud hat die AppID oder das AppSecret abgelehnt."
+    },
+    "communication_error": {
+      "message": "Bei der Kommunikation mit der AlphaESS-Cloud ist ein Fehler aufgetreten: {error}"
+    },
+    "no_systems": {
+      "message": "An dieses AlphaESS-Konto ist kein System mehr gebunden."
+    }
+  }
+}

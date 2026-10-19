@@ -1,0 +1,22 @@
+{
+  "code": 200,
+  "msg": "Success",
+  "expMsg": null,
+  "data": {
+    "epvtoday": 1.58,
+    "epvtotal": 16521.0,
+    "eload": 15.4,
+    "eoutput": 0.0,
+    "einput": 13.91,
+    "echarge": 0.08,
+    "edischarge": 0.0,
+    "todayIncome": null,
+    "totalIncome": 3770.0,
+    "eselfConsumption": 0.61,
+    "eselfSufficiency": 0.6702,
+    "treeNum": 1645.0,
+    "carbonNum": 8260.0,
+    "moneyType": null
+  },
+  "extra": null
+}
