@@ -10,6 +10,8 @@ from alphaessaio.models import DailyEnergy, EssSystem, LastPowerData, SystemSumm
 from homeassistant.core import HomeAssistant
 import pytest
 from pytest_homeassistant_custom_component.common import MockConfigEntry
+from pytest_homeassistant_custom_component.syrupy import HomeAssistantSnapshotExtension
+from syrupy.assertion import SnapshotAssertion
 
 from custom_components.alpha_ess.const import CONF_APP_ID, CONF_APP_SECRET, DOMAIN
 
@@ -24,6 +26,17 @@ def _load_payload(name: str) -> Any:
 @pytest.fixture(autouse=True)
 def auto_enable_custom_integrations(enable_custom_integrations: None) -> None:
     """Allow Home Assistant to load the integration from custom_components."""
+
+
+@pytest.fixture
+def snapshot(snapshot: SnapshotAssertion) -> SnapshotAssertion:
+    """Store snapshots in tests/snapshots with the Home Assistant serializer.
+
+    pytest-homeassistant-custom-component defines the same override, but whether
+    it or syrupy's plain fixture wins depends on the plugin load order, which
+    differs between machines.
+    """
+    return snapshot.use_extension(HomeAssistantSnapshotExtension)
 
 
 @pytest.fixture
