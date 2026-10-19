@@ -18,6 +18,22 @@ dev = [
 [tool.uv]
 package = false
 
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
+version_variables = ["custom_components/alpha_ess/manifest.json:version"]
+allow_zero_version = true
+major_on_zero = false
+commit_message = "chore(release): {version}"
+commit_author = "github-actions <actions@users.noreply.github.com>"
+# uv.lock stores the project version, so it has to follow every bump.
+build_command = """
+    uv lock --upgrade-package alpha-ess-homeassistant
+    git add uv.lock
+"""
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = ['chore\(release\): .*']
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
