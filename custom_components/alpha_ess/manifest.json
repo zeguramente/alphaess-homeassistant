@@ -1,7 +1,6 @@
 {
   "domain": "alpha_ess",
   "name": "Alpha ESS",
-  "categories": ["energy.solar_batteries"],
   "codeowners": ["@zeguramente"],
   "config_flow": true,
   "documentation": "https://github.com/zeguramente/alphaess-homeassistant",
